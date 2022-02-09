@@ -1,0 +1,87 @@
+@import url("./fonts/fonts.css");
+.sidenav {
+  border-right: 1px solid black;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
+  transition: 0.5s ease-out;
+}
+
+/* The navigation menu links */
+.sidenav button,
+.sidenav ul {
+  background-color: white;
+  border: none;
+  font-family: "Karrik";
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #555454;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav:ul {
+  cursor: default;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav button:hover {
+  cursor: pointer;
+  color: #000000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin-left: 60px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.burger {
+  width: 45px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: black;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-10px, 7px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-10px, -10px);
+}
+
+.burger-container {
+  margin: 15px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: 0.4s;
+}
